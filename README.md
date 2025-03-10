@@ -1,5 +1,6 @@
-# Developing a social network Java application with graphical user interface with asimple model from which relevant information can be extracted.
+# Developing a social network Java application with graphical user interface with a simple model from which relevant information can be extracted.
 ## Implemented feature: CRUD operations, managing friendships, displaying user communities, managing messaging, paginated view, notifications.
+## For persistence, the data was stored in a database (PostgreSQL).
 ## For the graphical user interface, JavaFX and CSS where used.
 
 ### A few images of the application to create an overview:
