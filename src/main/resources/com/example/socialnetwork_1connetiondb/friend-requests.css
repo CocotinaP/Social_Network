@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.root{
+    -fx-background-color: #19215e;
+}
+
+.logo{
+    -fx-font-size: 30;
+    -fx-text-fill: #80185f;
+    -fx-effect: dropshadow(gaussian, #f7e6b5, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.user-profile{
+    -fx-font-size: 25;
+    -fx-text-fill: #f7e6b5;
+    -fx-effect: dropshadow(gaussian, #80185f, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.title{
+    -fx-font-size: 25;
+    -fx-text-fill: #f7e6b5;
+    -fx-effect: dropshadow(gaussian, #80185f, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.button{
+    -fx-background-color: #80185f;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-width: 2;
+    -fx-border-color: #f7e6b5;
+}
+
+.button:hover{
+    -fx-background-color: #f7e6b5;
+    -fx-border-color: #80185f;
+}
+
+.list-view{
+    -fx-background-color: #19215e;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+    -fx-border-color: #19215e;
+}
+
+.list-cell{
+    -fx-background-color: #19215e;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+    -fx-border-color: #19215e;
+}
+
+.message{
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+}
+
+.list-cell:hover{
+    -fx-background-color: #80185f;
+}
+
+.list-cell:filled:selected{
+    -fx-background-color: #80185f;
+}

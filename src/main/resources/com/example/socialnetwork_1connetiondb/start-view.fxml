@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.socialnetwork_1connetiondb.controller.StartController"
+            prefHeight="200" prefWidth="320"
+            stylesheets="@start.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" top="20.0" right="20.0" />
+    </padding>
+    <top>
+        <VBox styleClass="top-container">
+            <Label fx:id="logo" styleClass="logo" text="FusionFriends" />
+        </VBox>
+    </top>
+    <center>
+        <Pane>
+            <Label styleClass="title" text="The list of users: " layoutX="10" layoutY="10"/>
+            <TableView fx:id="tableView" styleClass="table-view" layoutX="10" layoutY="60" prefWidth="Infinity">
+                <columns>
+                    <TableColumn fx:id="idCell" text="ID" visible="false"/>
+                    <TableColumn fx:id="firstNameCell" prefWidth="100" text="First Name"/>
+                    <TableColumn fx:id="lastNameCell" prefWidth="100" text="Last Name"/>
+                    <TableColumn fx:id="usernameCell" prefWidth="300" text="Username"/>
+                    <TableColumn fx:id="passwordCell" prefWidth="300" text="Password"/>
+                </columns>
+            </TableView>
+        </Pane>
+    </center>
+</BorderPane>

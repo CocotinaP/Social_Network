@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import org.controlsfx.control.ListActionView?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.socialnetwork_1connetiondb.controller.LoginController"
+            prefHeight="600" prefWidth="800"
+            stylesheets="@login.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" top="20.0" right="20.0" />
+    </padding>
+    <top>
+        <VBox styleClass="top-container">
+            <Label styleClass="logo" text="FusionFriends" />
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="30" alignment="CENTER">
+            <Label styleClass="title" text="Log in"/>
+            <GridPane vgap="10" hgap="10" alignment="CENTER">
+                <Label styleClass="label-text-field" text="Username" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="textFieldUsername" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label styleClass="error-label" fx:id="usernameErrorLabel" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <Label styleClass="label-text-field" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <PasswordField fx:id="textFieldPassword" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label styleClass="error-label" fx:id="passwordErrorLabel" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            </GridPane>
+            <Button fx:id="buttonLogin" onAction="#handleLogin" text="Log in" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Button fx:id="buttonCreateNewAccount" onAction="#handleCreateNewAccount" text="Crete a new account" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        </VBox>
+    </center>
+</BorderPane>

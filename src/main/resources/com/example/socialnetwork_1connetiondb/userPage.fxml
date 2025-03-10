@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600" prefWidth="800" stylesheets="@userPage.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork_1connetiondb.controller.UserPageController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <top>
+        <HBox alignment="CENTER" spacing="10" styleClass="top-container">
+            <Label alignment="CENTER" styleClass="logo" text="FusionFriends" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="userProfileLabel" alignment="CENTER" styleClass="user-profile" text="Welcome,...!" />
+            <MenuBar>
+                <Menu>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@images/user-menu.png" />
+                            </image>
+                            <fitHeight>20</fitHeight>
+                            <fitWidth>20</fitWidth>
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem fx:id="logOutMenuItem" onAction="#handleLogOut" text="Log out" />
+                        <MenuItem fx:id="removeAccountMenuItem" text="Remove account" />
+                    </items>
+                </Menu>
+                <Menu fx:id="notificationMenu">
+                    <graphic>
+                        <StackPane>
+                            <ImageView>
+                                <image>
+                                    <Image url="@images/notification-bell.png" />
+                                </image>
+                                <fitWidth>20</fitWidth>
+                                <fitHeight>20</fitHeight>
+                            </ImageView>
+                            <Label fx:id="notificationLabel" styleClass="notification-label" text="0">
+                                <StackPane.margin>
+                                    <Insets right="-30" top="-15" />
+                                </StackPane.margin>
+                            </Label>
+                        </StackPane>
+                    </graphic>
+                </Menu>
+            </MenuBar>
+        </HBox>
+    </top>
+    <right>
+        <VBox alignment="CENTER" spacing="20">
+            <Button fx:id="addFriendButton" onAction="#handleAddFriendButton">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@images/user-add.png" />
+                        </image>
+                        <fitHeight>40</fitHeight>
+                        <fitWidth>40</fitWidth>
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Add a new friend" />
+                </tooltip>
+            </Button>
+            <Button fx:id="removeFriendButton" onAction="#handleDeleteButton">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@images/delete-user.png" />
+                        </image>
+                        <fitHeight>40</fitHeight>
+                        <fitWidth>40</fitWidth>
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Remove the selected friend" />
+                </tooltip>
+            </Button>
+            <Button fx:id="viewFriendRequestsButton" onAction="#handleViewFriendRequestsButton">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@images/friend-requests.png" />
+                        </image>
+                        <fitHeight>40</fitHeight>
+                        <fitWidth>40</fitWidth>
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="View friend requests" />
+                </tooltip>
+            </Button>
+        </VBox>
+    </right>
+    <left>
+        <StackPane alignment="CENTER">
+            <VBox spacing="20">
+                <VBox alignment="CENTER" />
+                <HBox alignment="CENTER">
+                    <ComboBox fx:id="comboBox" editable="true"  prefHeight="10" prefWidth="180" promptText="Search new friends..." />
+                    <Button fx:id="searchButton" onAction="#handleSearchButton">
+                        <graphic>
+                            <ImageView>
+                                <image>
+                                    <Image url="@images/search.png" />
+                                </image>
+                                <fitHeight>15</fitHeight>
+                                <fitWidth>15</fitWidth>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Remove the selected friend" />
+                        </tooltip>
+                    </Button>
+                </HBox>
+                <Label alignment="TOP_LEFT" prefHeight="38.0" styleClass="title" text="The list of friends:" />
+                <TableView fx:id="tableView" prefWidth="200" styleClass="table-view">
+                    <columns>
+                        <TableColumn fx:id="firstNameCell" prefWidth="100" text="First Name" />
+                        <TableColumn fx:id="lastNameCell" prefWidth="100" text="Last Name" />
+                    </columns>
+                </TableView>
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button fx:id="previousPageButton" onAction="#onPreviousPage" styleClass="pagingButtons" text="Previous"/>
+                    <Label fx:id="pageNumberLabel" styleClass="pagingLabels" text="page of pages"/>
+                    <Button fx:id="nextPageButton" onAction="#onNextPage" styleClass="pagingButtons" text="Next"/>
+                </HBox>
+            </VBox>
+        </StackPane>
+    </left>
+    <center>
+        <VBox>
+            <Label fx:id="chatLabel" styleClass="chatTitle" text="Chat"/>
+            <ListView fx:id="messageList" prefHeight="465.0" prefWidth="490.0"/>
+            <HBox alignment="CENTER" spacing="0" VBox.vgrow="NEVER">
+                <TextField prefWidth="450" prefHeight="21" visible="false" fx:id="messageTextField" styleClass="messageTextField" promptText="Text a message..."/>
+                <Button styleClass="sendButton" visible="false" fx:id="sendButton"  prefHeight="21" onAction="#handleSendMessage">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@images/send.png"/>
+                            </image>
+                            <fitHeight>24</fitHeight>
+                            <fitWidth>20</fitWidth>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Send"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

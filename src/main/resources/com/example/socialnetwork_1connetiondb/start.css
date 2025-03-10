@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.root{
+    -fx-background-color: #19215e;
+}
+
+.logo{
+    -fx-font-size: 30;
+    -fx-text-fill: #80185f;
+    -fx-effect: dropshadow(gaussian, #f7e6b5, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.title{
+    -fx-font-size: 25;
+    -fx-text-fill: #f7e6b5;
+    -fx-effect: dropshadow(gaussian, #80185f, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.table-view{
+    -fx-background-color: #19215e;
+}
+
+.table-row-cell{
+    -fx-background-color: #19215e;
+}
+
+.table-cell{
+    -fx-background-color: #19215e;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+    -fx-border-color: #19215e;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-view .column-header .label{
+    -fx-background-color: #19215e;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+}
+
+.table-view .column-header, .table-view .column-header-background {
+    -fx-border-color: #19215e;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-view .column-header, .table-view .column-header-background .filler {
+    -fx-background-color: #19215e;
+    -fx-border-width: 0;
+}
+
+.table-cell:hover{
+    -fx-background-color: #80185f;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #80185f;
+}
+
+.table-row-cell:filled:selected .table-cell {
+    -fx-background-color: transparent;
+}

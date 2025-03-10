@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import org.controlsfx.control.ListActionView?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.socialnetwork_1connetiondb.controller.LoginController"
+            prefHeight="600" prefWidth="800"
+            stylesheets="@login.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" top="20.0" right="20.0" />
+    </padding>
+    <top>
+        <VBox styleClass="top-container">
+            <Label styleClass="logo" text="FusionFriends" />
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Label styleClass="logo" text="Create account"/>
+            <GridPane vgap="10" hgap="10" alignment="CENTER">
+                <Label styleClass="label-text-field" text="First name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="textFieldFirstNameCreateAccount" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label styleClass="label-text-field" text="Last name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField fx:id="textFieldLastNameCreateAccount" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label styleClass="label-text-field" text="Username" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <TextField fx:id="textFieldUsernameCreateAccount" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label styleClass="label-text-field" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                <TextField fx:id="textFieldPasswordCreateAccount" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            </GridPane>
+            <Button fx:id="buttonRegisterNewAccount" onAction="#handleRegisternewAccount" text="Create account"/>
+        </VBox>
+    </center>
+</BorderPane>

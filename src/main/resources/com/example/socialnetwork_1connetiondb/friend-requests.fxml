@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.socialnetwork_1connetiondb.controller.FriendRequestsController"
+            prefHeight="600" prefWidth="800"
+            stylesheets="@friend-requests.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" top="20.0" right="20.0" />
+    </padding>
+    <top>
+        <HBox styleClass="top-container" alignment="CENTER" spacing="10">
+            <Button fx:id="backButton" onAction="#handleBackButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@images/back-arrow.png"/>
+                        </image>
+                        <fitHeight>20</fitHeight>
+                        <fitWidth>15</fitWidth>
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Back"/>
+                </tooltip>
+            </Button>
+            <Label alignment="CENTER" styleClass="logo" text="FusionFriends" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="userProfileLabel" alignment="CENTER" styleClass="user-profile" text="Welcome,...!" />
+        </HBox>
+    </top>
+    <right>
+        <VBox alignment="CENTER" spacing="20">
+            <Button fx:id="acceptButton" onAction="#handleAcceptButton">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@images/accept-friendrequest.png"/>
+                        </image>
+                        <fitWidth>40</fitWidth>
+                        <fitHeight>40</fitHeight>
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Accept friend request"/>
+                </tooltip>
+            </Button>
+            <Button fx:id="deleteButton" onAction="#handleRemoveButton">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@images/delete-friendrequest.png"/>
+                        </image>
+                        <fitWidth>40</fitWidth>
+                        <fitHeight>40</fitHeight>
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Delete friend request"/>
+                </tooltip>
+            </Button>
+        </VBox>
+    </right>
+    <center>
+        <StackPane alignment="CENTER">
+            <VBox spacing="30" layoutX="10" layoutY="20">
+                <Label alignment="TOP_LEFT" text="Friend Requests" styleClass="title"/>
+                <Label fx:id="emptyListMessage" text="No friend requests available!" visible="false" styleClass="message"/>
+                <ListView fx:id="listView" prefWidth="300"/>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

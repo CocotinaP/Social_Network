@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.root{
+    -fx-background-color: #19215e;
+}
+
+.logo{
+    -fx-font-size: 30;
+    -fx-text-fill: #80185f;
+    -fx-effect: dropshadow(gaussian, #f7e6b5, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.user-profile{
+    -fx-font-size: 25;
+    -fx-text-fill: #f7e6b5;
+    -fx-effect: dropshadow(gaussian, #80185f, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.title{
+    -fx-font-size: 25;
+    -fx-text-fill: #f7e6b5;
+    -fx-effect: dropshadow(gaussian, #80185f, 5, 0.5, 1, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Oleo Script', system-ui;
+}
+
+.table-view{
+    -fx-background-color: #19215e;
+}
+
+.table-row-cell{
+    -fx-background-color: #19215e;
+}
+
+.table-cell{
+    -fx-background-color: #19215e;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+    -fx-border-color: #19215e;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-view .column-header .label{
+    -fx-background-color: #19215e;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 18;
+}
+
+.table-view .column-header, .table-view .column-header-background {
+    -fx-border-color: #19215e;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-view .column-header, .table-view .column-header-background .filler {
+    -fx-background-color: #19215e;
+    -fx-border-width: 0;
+}
+
+.table-cell:hover{
+    -fx-background-color: #80185f;
+}
+
+.button{
+    -fx-background-color: #f7e6b5;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-color: #80185f;
+    -fx-border-width: 2px;
+}
+
+.button:hover{
+    -fx-background-color: #80185f;
+    -fx-border-color: #f7e6b4;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #80185f;
+}
+
+.table-row-cell:filled:selected .table-cell {
+    -fx-background-color: transparent;
+}
+
+.combo-box{
+    -fx-background-color: #f7e6b5;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #80185f;
+    -fx-border-width: 2;
+    -fx-text-fill: #80185f;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-font-size: 15;
+}
+
+.combo-box .text-field{
+    -fx-background-color: #f7e6b5;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-text-fill: #80185f;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-font-size: 15;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #f7e6b5;
+    -fx-background-radius: 25px; }
+
+.combo-box .list-cell{
+    -fx-background-color: #f7e6b5;
+    -fx-border-color: #80185f;
+    -fx-border-width: 2;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-text-fill: #80185f;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-font-size: 15;
+    -fx-spacing: 5;
+}
+
+.combo-box-popup .list-view{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-max-height: 100px;
+}
+
+.combo-box .list-cell:filled:selected {
+    -fx-background-color: #80185f;
+    -fx-text-fill: #f7e6b5;
+    -fx-border-color: #f7e6b5;
+}
+
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #80185f;
+    -fx-text-fill: #f7e6b5;
+    -fx-border-color: #f7e6b5;
+}
+
+.menu-bar{
+    -fx-background-color: transparent;
+}
+
+.menu{
+    -fx-background-color: #f7e6b5;
+    -fx-text-fill: #80185f;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #80185f;
+    -fx-background-insets: 0;
+}
+
+.menu-item{
+    -fx-background-color: #f7e6b5;
+    -fx-text-fill: #80185f;
+    -fx-text-alignment: center;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #80185f;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-font-size: 15;
+    -fx-background-insets: 0;
+    -fx-end-margin: 5px;
+}
+
+.menu-item:hover{
+    -fx-background-color: #80185f;
+    -fx-border-color: #f7e6b5;
+    -fx-text-fill: #f7e6b5;
+}
+
+.context-menu {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.notification-label{
+    -fx-background-radius: 50%;
+    -fx-border-color: transparent;
+    -fx-background-color: #d53939;
+    -fx-text-fill: #f7e6b5;
+    -fx-padding: 2px 6px;
+    -fx-font-size: 10px;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-alignment: center;
+    -fx-min-height: 20px;
+    -fx-max-width: 20px;
+}
+
+.table-view .column-header-background {
+    visibility: hidden;
+}
+
+.list-view{
+    -fx-background-color: #f7e6b5;
+    -fx-background-radius: 0 25px 0 0;
+    -fx-border-color: #80185f;
+    -fx-border-width: 2px;
+    -fx-border-radius: 0 25px 0 0;
+}
+
+.list-cell{
+    fx-background-color: #f7e6b5;
+    -fx-text-fill: #80185f;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-font-size: 15;
+}
+
+.list-cell:filled {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.messageTextField{
+    -fx-border-radius: 0 0 0 25px;
+    -fx-background-radius: 0 0 0 25px;
+    -fx-background-color: #f7e6b5;
+    -fx-border-color: #80185f;
+    -fx-text-fill: #80185f;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-font-size: 15;
+    -fx-border-width: 2px 0 2px 2px;
+    -fx-background-insets: 0 0 0 2px
+}
+
+.sendButton{
+    -fx-background-radius: 0 0 25px 0;
+    -fx-border-radius: 0 0 25px 0;
+    -fx-border-width: 2px 2px 2px 0;
+    -fx-background-insets: 0 2px 2px 0;
+}
+
+.sendButton:hover{
+    -fx-border-color: #80185f;
+}
+
+.messageLabelSent{
+    -fx-background-color: #80185f;
+    -fx-padding: 5px;
+    -fx-background-radius: 10;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+}
+
+.messageLabelReceived{
+    -fx-background-color: #fa67ab;
+    -fx-padding: 5px; -fx-background-radius: 10;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+}
+
+.replyMessageLabel{
+    -fx-background-color: #80185f;
+    -fx-padding: 5px;
+    -fx-background-radius: 10;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-opacity: 0.5;
+}
+
+.chatTitle{
+    -fx-background-color: #f7e6b5;
+    -fx-padding: 5px;
+    -fx-background-radius: 25px 25px 0 0;
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #80185f;
+    -fx-border-color: #80185f;
+    -fx-border-radius: 25px 25px 0 0;
+    -fx-border-width: 2px;
+    -fx-background-insets: 2px 2px 2px 0;
+}
+
+.scroll-bar{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track{
+    -fx-background-color: #80185f;
+}
+
+.scroll-bar .thumb{
+    -fx-background-color: #f7e6b5;
+    -fx-border-radius: 10px;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+    -fx-background-color: #80185f;
+    -fx-background-radius: 50%;
+    -fx-padding: 5px;
+}
+
+.replyButtonLeft,
+.replyButtonRight{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.replyButtonLeft:hover{
+    -fx-border-color: transparent;
+    -fx-background-color: #fa67ab;
+}
+
+.replyButtonRight:hover{
+    -fx-border-color: transparent;
+    -fx-background-color: #80185f;
+}
+
+.pagingLabels{
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 14;
+}
+
+.pagingButtons{
+    -fx-font-family: 'Oleo Script', system-ui;
+    -fx-text-fill: #f7e6b5;
+    -fx-font-size: 14;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.pagingButtons:hover{
+    -fx-underline: true;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #f7e6b5;
+}
+
